@@ -16,11 +16,12 @@ order: 3
     - [Mirror to Gitlab and running GitLab CI](https://github.com/marketplace/actions/mirror-to-gitlab-and-run-gitlab-ci)
     - [Mirroring Repository](https://github.com/marketplace/actions/mirroring-repository)
 
-Also, it's possible to host only your Obsidian content in a private repository hosted on GitHub and use other hosting solution for the rest (template, quartz…) using submodule.
+Also, it's possible to host only your Obsidian content in a private repository hosted on GitHub and use other hosting solution for the rest (template or [quartz](https://github.com/jackyzha0/quartz) for example) using submodule.
 
 ## Dry-Run
 
-However, the dry-run allow to "test" the plugin without sending into a Repository. The plugin will follow all of your settings, but instead of sending into a repository, it will send into a configured folder. You can use variable to simulate multiple repository :
+However, the dry-run allow to "test" the plugin without sending into a Repository. The plugin will follow all of your settings, but instead of sending into a repository, it will send into a configured folder. You can use variable to simulate multiple repository:
+
 - `{{owner}}` 
 - `{{repo}}`
 - `{{branch}}`
