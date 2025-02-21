@@ -10,10 +10,6 @@ Publish your notes in your own GitHub repository for free and do whatever you wa
 
 This allows you to set up any template: Jekyll, Mkdocs, Hugo, or custom-made ones!
 
-## 📑 [Documentation](https://enveloppe.ovh/)
-
-Here, you will only get a quick setup!
-
 ## 🪄 Features
 
 - Converting `[[wikilinks]]` to markdown links
@@ -48,7 +44,7 @@ Before you begin, you will need to configure your GitHub repository.
 5. Now, run the command to publish: `Upload single current active note`
 6. If everything is good, a PR will be created on your repository and will be automatically merged (this can be disabled if desired!).
 
-That's it! However, there are many options that a simple README cannot cover, so please refer to the documentation for more information. 💕.
+That's it! However, there are many options that a simple README cannot cover, so please refer to [the documentation](https://enveloppe.ovh) for more information. 💕.
 
 ## ⚙️ Usage
 
@@ -76,9 +72,9 @@ Each of the commands are explained [[Commands|here]].
 
 ## 🪛 Developing
 
-You can :
+You can:
 
-- [Maintaining the project and adding new function](https://enveloppe.ovh//Developing#general)
+- [Contribute to the project by adding new function](https://enveloppe.ovh//Developing#general)
 - [Help with the translation](https://enveloppe.ovh//Developing#translation)
 
 ## 🪧 Looking for something?
