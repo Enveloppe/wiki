@@ -22,7 +22,7 @@ Also, it's possible to host only your Obsidian content in a private repository h
 
 However, the dry-run allow to "test" the plugin without sending into a Repository. The plugin will follow all of your settings, but instead of sending into a repository, it will send into a configured folder. You can use variable to simulate multiple repository:
 
-- `{{owner}}` 
+- `{{owner}}`
 - `{{repo}}`
 - `{{branch}}`
 

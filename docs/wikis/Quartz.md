@@ -30,6 +30,7 @@ The template includes:
 - Configure the plugin to send icons file (using override attachment) into `quartz/static/icons` : Replace path of attachment for svg files: `/(_assets\/_PLUGINS\/icons)\/(.*)\/(.*)\.(svg)$/`->`quartz/static/icons/$2/{{name}}`
 - Configure the plugin to send file by frontmatter key: `icon_file`
 - In the file [quartz.layout.ts], add this:
+
   ```ts
   const iconsOptions: IconFolderOptions = {
     rootIconFolder: "quartz/static/icons",
@@ -38,14 +39,17 @@ The template includes:
     },
   }
   ```
+
   > [!warning] Don't forget to add the default icon (named `file.svg`) in the `quartz/static/icons` folder.
 - Edit `Component.ExlorerBurger()` as follow:
-  ```
+
+  ```js
   Component.ExplorerBurger({
-  	//keep your old settings; add only iconSettings
-  	iconSettings: iconsOptions,
+    //keep your old settings; add only iconSettings
+    iconSettings: iconsOptions,
   }),
   ```
+
 - Edit `Component.ArticleTitle()` as follow: `Component.ArticleTitle(iconsOptions)`
 
 ### Mobile navigation

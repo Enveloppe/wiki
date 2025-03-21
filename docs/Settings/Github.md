@@ -6,8 +6,8 @@ order: "1"
 ![](../_assets/img/Github_settings-1.png)
 
 - **Repo name**: The repository where the files will be sent.
-- **GitHub username**: Your GitHub username.
-- **GitHub Token**:[^1] Get your [GitHub Token here](https://github.com/settings/tokens/new?scopes=repo). The correct settings should already be applied. To avoid generating a new token every few months, select the “No expiration” option. Click the “Generate token” button and copy the token you are presented with on the next page.
+- **GitHub username**: Your GitHub username or organization.
+- **GitHub token**: Your GitHub token with read and write access. For more details see [[../wikis/Handling API keys.md]]
 - **Branch name**: The branch where the files will be sent. By default, it is set to `main`, but you can change it to whatever you want, as long as the branch exists.
 - Automatic branch merging can be disabled.
 - You can use the "**test connection**" button to check that all connection parameters are working.
@@ -26,7 +26,6 @@ Also, you can configure your GitHub Workflow here :
 > [!grid]
 > ![[../_assets/img/Github_manage_other_1.png]]
 > ![[../_assets/img/Github_manage_other_2.png]]
-> 
 > ![[../_assets/img/Github_manage_other_3.png]]
 
 You can now manage multiple repository in the settings. It will allows you to use **all** commands on each configured repository. Note that it will use the same conversion settings for all repositories.
@@ -44,8 +43,7 @@ It's also possible to connect the frontmatter of a file to this repository, over
 
 > [!important]
 > To keep performance, the frontmatter is read and saved when:
-> - The file is registered as "set" 
+>
+> - The file is registered as "set"
 > - The plugin is loaded
 > If you edit the frontmatter, you need to either reload the plugin or re-register the file. You can use the command "Refresh registered set" to update the frontmatter.
-
-[^1]: A GitHub account and connection is required to create a token.
