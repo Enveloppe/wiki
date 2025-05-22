@@ -21,7 +21,5 @@ Install the plugins through [Obsidian Community](obsidian://show-plugin?id=obsid
 
 Configure Enveloppe as described [here](https://enveloppe.ovh/Getting%20Started/Plugin/) or learn how to [contribute back](https://enveloppe.ovh/Getting%20Started/Developing/) to the project.
 
-## Danger Danger 
-
 > [!warning] Do NOT use Enveloppe to publish from *within* the Vault directory structure. If you do, the upload process will corrupt your files! This module is not intended for this type of workflow.
 
