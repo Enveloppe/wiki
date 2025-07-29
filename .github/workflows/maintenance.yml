@@ -40,6 +40,7 @@ on:
         description: "The author name"
 jobs:
   unused_images:
+    if: inputs.CLEAN
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -54,12 +55,11 @@ jobs:
       run: |
         uv sync
     - name: Clean
-      if: inputs.CLEAN
       run: |
        echo "Cleaning"
        uv run .github/find_unused_image.py
     - name: Commit
-      if: inputs.CLEAN && inputs.DRY_RUN == false
+      if: inputs.DRY_RUN == false
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN}}
