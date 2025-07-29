@@ -57,7 +57,7 @@ jobs:
       if: inputs.CLEAN
       run: |
        echo "Cleaning"
-       pipenv run python .github/find_unused_image.py
+       uv run .github/find_unused_image.py
     - name: Commit
       if: inputs.CLEAN && inputs.DRY_RUN == false
       uses: actions-js/push@master
