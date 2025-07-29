@@ -2,6 +2,13 @@ name: Publish
 
 on:
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      FETCH_SUBMODULE:
+        description: "Fetch submodule for the docs"
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
@@ -20,7 +27,7 @@ permissions:
   id-token: write
 
 env:
-  FETCH_SUBMODULE: false # change this to true if you use submodule for the docs
+  FETCH_SUBMODULE: ${{ inputs.FETCH_SUBMODULE || 'false' }}
 
 jobs:
   build:
