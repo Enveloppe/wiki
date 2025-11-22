@@ -7,7 +7,7 @@ order: 7
 
 You can help me develop the plugin using `pnpm`!
 
-1. First, clone the project on your computer with `git clone git@github.com:enveloppe/obsidian-enveloppe.git`
+1. First, clone the project on your computer with `git clone --recurse-submodules git@github.com:enveloppe/obsidian-enveloppe.git`
 2. `cd obsidian-enveloppe`
 3. `pnpm install`
 4. Create an `.env` file with the following content:
